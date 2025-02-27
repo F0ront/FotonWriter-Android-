@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200"
+   height="200"
+   viewBox="0 0 52.916665 52.916666"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="mein_icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="1.9981322"
+     inkscape:cx="16.26519"
+     inkscape:cy="65.811462"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="0.26458333"
+       spacingy="0.26458333"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,13.229166,0,1 @ F,0,0,1,0,13.229166,0,1 @ F,0,0,1,0,13.229166,0,1 @ F,0,0,1,0,13.229166,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#000000;fill-opacity:1;stroke-width:9.36308;stroke-linecap:square;stroke-miterlimit:5;paint-order:fill markers stroke"
+       id="rect1"
+       width="52.916664"
+       height="52.916664"
+       x="0"
+       y="0"
+       inkscape:path-effect="#path-effect1"
+       sodipodi:type="rect"
+       d="M 13.229166,0 H 39.687498 A 13.229166,13.229166 45 0 1 52.916664,13.229166 V 39.687498 A 13.229166,13.229166 135 0 1 39.687498,52.916664 H 13.229166 A 13.229166,13.229166 45 0 1 0,39.687498 V 13.229166 A 13.229166,13.229166 135 0 1 13.229166,0 Z" />
+    <path
+       d="M 26.458333,5.2916671 A 21.166663,21.166663 0 0 0 5.2916668,26.458332 21.166663,21.166663 0 0 0 26.458333,47.624998 21.166663,21.166663 0 0 0 47.624999,26.458332 21.166663,21.166663 0 0 0 26.458333,5.2916671 Z m 0,10.5833319 A 10.583339,10.583339 0 0 1 37.041666,26.458332 10.583339,10.583339 0 0 1 26.458333,37.041666 10.583339,10.583339 0 0 1 15.875001,26.458332 10.583339,10.583339 0 0 1 26.458333,15.874999 Z"
+       style="fill:#ffffff;fill-opacity:0.998788;fill-rule:evenodd;stroke-width:0.587798;stroke-linecap:square;stroke-linejoin:round;paint-order:markers stroke fill"
+       id="path131"
+       inkscape:label="f" />
+  </g>
+</svg>

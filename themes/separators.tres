@@ -1,0 +1,9 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://yldbg0md2xxl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xprco"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vg1t3"]
+
+[resource]
+HSeparator/styles/separator = SubResource("StyleBoxEmpty_xprco")
+VSeparator/styles/separator = SubResource("StyleBoxEmpty_vg1t3")

@@ -1,0 +1,57 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="FOTON writer"
+config/description="App for writing texts on photonic language"
+run/main_scene="res://trash)))/main.tscn"
+config/features=PackedStringArray("4.3", "Mobile")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="res://icons/logo.png"
+config/icon="res://icons/mein_icon.svg"
+boot_splash/minimum_display_time=1000
+
+[display]
+
+window/size/viewport_width=540
+window/size/viewport_height=960
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=6
+
+[file_customization]
+
+folder_colors={
+"res://fonts/": "red",
+"res://icons/": "blue",
+"res://keyboards/": "yellow",
+"res://line/": "purple",
+"res://menu/": "pink",
+"res://themes/": "green",
+"res://trash)))/": "gray"
+}
+
+[filesystem]
+
+import/blender/enabled=false
+
+[gui]
+
+theme/default_font_multichannel_signed_distance_field=true
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://trash)))/translation/localizations.en.translation", "res://trash)))/translation/localizations.fo.translation", "res://trash)))/translation/localizations.ru.translation", "res://trash)))/translation/localizations.uk.translation")
+
+[rendering]
+
+renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true

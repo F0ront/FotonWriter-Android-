@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://biubgk0h5vrnp"
+
+[deps]
+
+files=["res://trash)))/translation/localizations.fo.translation", "res://trash)))/translation/localizations.en.translation", "res://trash)))/translation/localizations.ru.translation", "res://trash)))/translation/localizations.uk.translation"]
+
+source_file="res://trash)))/translation/localizations.csv"
+dest_files=["res://trash)))/translation/localizations.fo.translation", "res://trash)))/translation/localizations.en.translation", "res://trash)))/translation/localizations.ru.translation", "res://trash)))/translation/localizations.uk.translation"]
+
+[params]
+
+compress=true
+delimiter=0
