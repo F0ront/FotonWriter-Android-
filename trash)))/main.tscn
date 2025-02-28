@@ -1,9 +1,10 @@
-[gd_scene load_steps=51 format=3 uid="uid://dv0nrb6gfu4vi"]
+[gd_scene load_steps=52 format=3 uid="uid://dv0nrb6gfu4vi"]
 
 [ext_resource type="Script" path="res://trash)))/margin_container.gd" id="1_leih5"]
 [ext_resource type="AudioStream" uid="uid://dk03drklcmeqf" path="res://trash)))/click.mp3" id="1_onrnh"]
 [ext_resource type="Script" path="res://line/font.gd" id="2_7bseo"]
 [ext_resource type="Theme" uid="uid://yldbg0md2xxl" path="res://themes/separators.tres" id="3_c0re1"]
+[ext_resource type="Theme" uid="uid://bm2tfjmmgs5fo" path="res://themes/panel_round.tres" id="3_nvks4"]
 [ext_resource type="Script" path="res://line/keyboard.gd" id="5_3emns"]
 [ext_resource type="Script" path="res://keyboards/letter.gd" id="8_a3a06"]
 [ext_resource type="Script" path="res://line/super.gd" id="8_ea2m5"]
@@ -118,7 +119,7 @@ max_polyphony = 5
 
 [node name="main_tabs" type="TabContainer" parent="MarginContainer"]
 layout_mode = 2
-theme = ExtResource("9_52axe")
+theme = ExtResource("3_nvks4")
 tab_alignment = 1
 current_tab = 0
 

@@ -1,0 +1,61 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://bm2tfjmmgs5fo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x55g2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sq8yt"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 50
+border_width_top = 5
+border_width_right = 50
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xhm0o"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 50
+border_width_top = 5
+border_width_right = 50
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_how46"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 50
+border_width_top = 5
+border_width_right = 50
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_thd5a"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 50
+border_width_top = 5
+border_width_right = 50
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q428u"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+corner_detail = 10
+
+[resource]
+TabContainer/colors/font_hovered_color = Color(1, 1, 1, 1)
+TabContainer/colors/font_outline_color = Color(0, 0, 0, 1)
+TabContainer/colors/font_selected_color = Color(0.498039, 0, 1, 1)
+TabContainer/colors/font_unselected_color = Color(1, 1, 1, 1)
+TabContainer/font_sizes/font_size = 15
+TabContainer/styles/panel = SubResource("StyleBoxEmpty_x55g2")
+TabContainer/styles/tab_focus = SubResource("StyleBoxFlat_sq8yt")
+TabContainer/styles/tab_hovered = SubResource("StyleBoxFlat_xhm0o")
+TabContainer/styles/tab_selected = SubResource("StyleBoxFlat_how46")
+TabContainer/styles/tab_unselected = SubResource("StyleBoxFlat_thd5a")
+TabContainer/styles/tabbar_background = SubResource("StyleBoxFlat_q428u")
