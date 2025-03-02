@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=18 format=3 uid="uid://ddp1rdkdohq2n"]
+[gd_resource type="Theme" load_steps=19 format=3 uid="uid://ddp1rdkdohq2n"]
 
 [ext_resource type="FontFile" uid="uid://bmq86qnrtgg46" path="res://fonts/FOTON_sharp.ttf" id="1_jxp2t"]
 
@@ -93,6 +93,8 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 corner_detail = 1
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pl8in"]
 bg_color = Color(1, 1, 1, 1)
@@ -101,6 +103,8 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 corner_detail = 1
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2qc5p"]
 bg_color = Color(0.498039, 0, 1, 1)
@@ -109,8 +113,29 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 corner_detail = 1
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qw1l3"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w2pht"]
+bg_color = Color(0.498039, 0.498039, 0.498039, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.498039, 0.498039, 0.498039, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vlcg3"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 1
 
 [resource]
 Button/colors/font_color = Color(1, 1, 1, 1)
@@ -163,4 +188,5 @@ TextEdit/styles/read_only = SubResource("StyleBoxEmpty_yxlke")
 VScrollBar/styles/grabber = SubResource("StyleBoxFlat_ofjmp")
 VScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_pl8in")
 VScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_2qc5p")
-VScrollBar/styles/scroll_focus = SubResource("StyleBoxFlat_qw1l3")
+VScrollBar/styles/scroll = SubResource("StyleBoxFlat_w2pht")
+VScrollBar/styles/scroll_focus = SubResource("StyleBoxFlat_vlcg3")
