@@ -16,6 +16,7 @@ func _on_pressed() -> void:
 		size.x = size.y
 		$"../../../..".set_theme(panel_ro)
 		$"../../TextEdit".set_theme(round_st)
+		$"../../../../&TEXTCHIPHER/VBoxContainer/TextEdit".set_theme(round_st)
 		$"../keyboard".set_theme(round_st)
 		$"../super".set_theme(round_st)
 		$"../../../../../menu/TabContainer".set_theme(round_st)
@@ -26,6 +27,7 @@ func _on_pressed() -> void:
 		size.x = size.y
 		$"../../../..".set_theme(panel_sh)
 		$"../../TextEdit".set_theme(sharp_st)
+		$"../../../../&TEXTCHIPHER/VBoxContainer/TextEdit".set_theme(sharp_st)
 		$"../keyboard".set_theme(sharp_st)
 		$"../super".set_theme(sharp_st)
 		$"../../../../../menu/TabContainer".set_theme(sharp_st)

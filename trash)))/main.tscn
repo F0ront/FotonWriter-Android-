@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://dv0nrb6gfu4vi"]
+[gd_scene load_steps=54 format=3 uid="uid://dv0nrb6gfu4vi"]
 
 [ext_resource type="Script" path="res://trash)))/margin_container.gd" id="1_leih5"]
 [ext_resource type="AudioStream" uid="uid://dk03drklcmeqf" path="res://trash)))/click.mp3" id="1_onrnh"]
@@ -6,11 +6,13 @@
 [ext_resource type="Theme" uid="uid://yldbg0md2xxl" path="res://themes/separators.tres" id="3_c0re1"]
 [ext_resource type="Theme" uid="uid://bm2tfjmmgs5fo" path="res://themes/panel_round.tres" id="3_nvks4"]
 [ext_resource type="Script" path="res://line/keyboard.gd" id="5_3emns"]
-[ext_resource type="Script" path="res://keyboards/letter.gd" id="8_a3a06"]
+[ext_resource type="Script" path="res://keyboards/key.gd" id="8_a3a06"]
 [ext_resource type="Script" path="res://line/super.gd" id="8_ea2m5"]
 [ext_resource type="Theme" uid="uid://cnuiw8kysq02q" path="res://themes/round_key.tres" id="9_52axe"]
 [ext_resource type="FontFile" uid="uid://c2bn1uoi0dfs4" path="res://fonts/FOTON_round.ttf" id="11_02dme"]
-[ext_resource type="Script" path="res://keyboards/keyboard_ideal.gd" id="12_6gnuv"]
+[ext_resource type="Script" path="res://keyboards/keyboard_2.gd" id="11_bk3ew"]
+[ext_resource type="Script" path="res://keyboards/key_2.gd" id="12_6agfp"]
+[ext_resource type="Script" path="res://keyboards/keyboard.gd" id="12_6gnuv"]
 [ext_resource type="Texture2D" uid="uid://bowe3bx7xnfhp" path="res://icons/logo.png" id="14_2vphu"]
 [ext_resource type="Script" path="res://menu/settings.gd" id="14_ak1aj"]
 [ext_resource type="Script" path="res://menu/link.gd" id="14_h7wxx"]
@@ -224,6 +226,39 @@ script = ExtResource("8_a3a06")
 visible = false
 layout_mode = 2
 metadata/_tab_index = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/main_tabs/&TEXTCHIPHER"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="TextEdit" type="TextEdit" parent="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("9_52axe")
+
+[node name="Label" type="Label" parent="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer"]
+layout_mode = 2
+text = "afasf"
+
+[node name="keyboard" type="GridContainer" parent="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+columns = 6
+script = ExtResource("11_bk3ew")
+
+[node name="key" type="Button" parent="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer/keyboard"]
+layout_mode = 2
+focus_mode = 0
+theme = ExtResource("9_52axe")
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("12_6agfp")
 
 [node name="menu" type="Control" parent="MarginContainer"]
 visible = false
@@ -454,6 +489,9 @@ vertical_alignment = 1
 [connection signal="button_down" from="MarginContainer/main_tabs/&TEXTEDIT/VBoxContainer/keyboard/key" to="MarginContainer/main_tabs/&TEXTEDIT/VBoxContainer/keyboard/key" method="_on_button_down"]
 [connection signal="button_up" from="MarginContainer/main_tabs/&TEXTEDIT/VBoxContainer/keyboard/key" to="MarginContainer/main_tabs/&TEXTEDIT/VBoxContainer/keyboard/key" method="_on_button_up"]
 [connection signal="pressed" from="MarginContainer/main_tabs/&TEXTEDIT/VBoxContainer/keyboard/key" to="MarginContainer/main_tabs/&TEXTEDIT/VBoxContainer/keyboard/key" method="_on_pressed"]
+[connection signal="button_down" from="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer/keyboard/key" to="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer/keyboard/key" method="_on_button_down"]
+[connection signal="button_up" from="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer/keyboard/key" to="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer/keyboard/key" method="_on_button_up"]
+[connection signal="pressed" from="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer/keyboard/key" to="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer/keyboard/key" method="_on_pressed"]
 [connection signal="value_changed" from="MarginContainer/menu/TabContainer/&SETTINGS/VBoxContainer/font_size" to="MarginContainer/menu/TabContainer/&SETTINGS" method="_on_h_slider_value_changed"]
 [connection signal="pressed" from="MarginContainer/menu/TabContainer/&SETTINGS/VBoxContainer/language" to="MarginContainer/menu/TabContainer/&SETTINGS" method="_on_language_pressed"]
 [connection signal="pressed" from="MarginContainer/menu/TabContainer/&SETTINGS/VBoxContainer/close" to="MarginContainer/main_tabs/&TEXTEDIT/VBoxContainer/line/super" method="_on_button_pressed"]

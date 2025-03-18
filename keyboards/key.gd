@@ -21,13 +21,10 @@ func _on_pressed() -> void:
 	elif name == "-":
 		$"../../../../../Audio_click".play()
 		$"../../TextEdit".set_caret_column(caret_pl)
-
 func _on_button_down() -> void:
 	set_z_index(1)
-
 func _on_button_up() -> void:
 	set_z_index(0)
-
 func _process(_delta: float) -> void:
 	if $"../../line/font".i == 0:
 		self.set_theme(round_st)
