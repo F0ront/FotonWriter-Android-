@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=19 format=3 uid="uid://ddp1rdkdohq2n"]
 
-[ext_resource type="FontFile" uid="uid://bmq86qnrtgg46" path="res://fonts/FOTON_sharp.ttf" id="1_jxp2t"]
+[ext_resource type="FontFile" uid="uid://r5im8l23fj0i" path="res://fonts/FOTON_sharp.ttf" id="1_jxp2t"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x5j1n"]
 bg_color = Color(0.196078, 0.196078, 0.196078, 1)
