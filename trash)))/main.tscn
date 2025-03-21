@@ -321,9 +321,10 @@ max_polyphony = 5
 layout_mode = 2
 theme = ExtResource("3_nvks4")
 tab_alignment = 1
-current_tab = 0
+current_tab = 1
 
 [node name="&TEXTEDIT" type="TabBar" parent="MarginContainer/main_tabs"]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
@@ -422,7 +423,6 @@ expand_icon = true
 script = ExtResource("8_a3a06")
 
 [node name="&TEXTCHIPHER" type="TabBar" parent="MarginContainer/main_tabs"]
-visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 
@@ -435,13 +435,12 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="TextEdit" type="TextEdit" parent="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer"]
+[node name="LineEdit" type="LineEdit" parent="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer"]
 layout_mode = 2
-size_flags_vertical = 3
-theme = ExtResource("9_52axe")
 
 [node name="Label" type="Label" parent="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer"]
 layout_mode = 2
+size_flags_vertical = 3
 text = "afasf"
 
 [node name="keyboard" type="GridContainer" parent="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer"]
