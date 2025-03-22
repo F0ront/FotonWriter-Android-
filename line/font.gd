@@ -22,6 +22,7 @@ func _on_pressed() -> void:
 		$"../../../../../menu/TabContainer".set_theme(round_st)
 		$"../../../../../menu/TabContainer/&SETTINGS/VBoxContainer/test_text".remove_theme_font_override("font")
 		$"../../../../../menu/TabContainer/&SETTINGS/VBoxContainer/test_text".add_theme_font_override("font", round_font)
+		$"../../../../&TEXTCHIPHER/VBoxContainer/LineEdit".set_theme(round_st)
 	elif i == 1:
 		self.set_theme(sharp_st)
 		size.x = size.y
@@ -33,6 +34,7 @@ func _on_pressed() -> void:
 		$"../../../../../menu/TabContainer".set_theme(sharp_st)
 		$"../../../../../menu/TabContainer/&SETTINGS/VBoxContainer/test_text".remove_theme_font_override("font")
 		$"../../../../../menu/TabContainer/&SETTINGS/VBoxContainer/test_text".add_theme_font_override("font", sharp_font)
+		$"../../../../&TEXTCHIPHER/VBoxContainer/LineEdit".set_theme(sharp_st)
 func _on_button_down() -> void:
 	set_z_index(1)
 
