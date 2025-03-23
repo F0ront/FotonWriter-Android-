@@ -1,4 +1,8 @@
-[gd_resource type="Theme" load_steps=7 format=3 uid="uid://bm2tfjmmgs5fo"]
+[gd_resource type="Theme" load_steps=10 format=3 uid="uid://bm2tfjmmgs5fo"]
+
+[ext_resource type="FontFile" uid="uid://rdkn3jthpp0a" path="res://fonts/FOTON_round.ttf" id="1_2ijkl"]
+[ext_resource type="Texture2D" uid="uid://c8xhpmafgroe8" path="res://icons/left_ro.png" id="2_kswh7"]
+[ext_resource type="Texture2D" uid="uid://c02unv34vthmo" path="res://icons/right_ro.png" id="3_7gr83"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x55g2"]
 
@@ -53,6 +57,11 @@ TabContainer/colors/font_outline_color = Color(0, 0, 0, 1)
 TabContainer/colors/font_selected_color = Color(0.498039, 0, 1, 1)
 TabContainer/colors/font_unselected_color = Color(1, 1, 1, 1)
 TabContainer/font_sizes/font_size = 15
+TabContainer/fonts/font = ExtResource("1_2ijkl")
+TabContainer/icons/decrement = ExtResource("2_kswh7")
+TabContainer/icons/decrement_highlight = ExtResource("2_kswh7")
+TabContainer/icons/increment = ExtResource("3_7gr83")
+TabContainer/icons/increment_highlight = ExtResource("3_7gr83")
 TabContainer/styles/panel = SubResource("StyleBoxEmpty_x55g2")
 TabContainer/styles/tab_focus = SubResource("StyleBoxFlat_sq8yt")
 TabContainer/styles/tab_hovered = SubResource("StyleBoxFlat_xhm0o")

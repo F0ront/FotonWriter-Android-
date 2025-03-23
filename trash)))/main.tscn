@@ -467,6 +467,7 @@ expand_icon = true
 script = ExtResource("12_6agfp")
 
 [node name="menu" type="Control" parent="MarginContainer"]
+visible = false
 layout_mode = 2
 
 [node name="TabContainer" type="TabContainer" parent="MarginContainer/menu"]
