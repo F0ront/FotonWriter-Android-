@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=4 uid="uid://dv0nrb6gfu4vi"]
+[gd_scene load_steps=58 format=4 uid="uid://dv0nrb6gfu4vi"]
 
 [ext_resource type="Script" uid="uid://dq40owgc6yidc" path="res://trash)))/margin_container.gd" id="1_leih5"]
 [ext_resource type="AudioStream" uid="uid://dk03drklcmeqf" path="res://trash)))/click.mp3" id="1_onrnh"]
@@ -9,6 +9,8 @@
 [ext_resource type="Script" uid="uid://c5awh0mn7hqyu" path="res://keyboards/key.gd" id="8_a3a06"]
 [ext_resource type="Script" uid="uid://860hdl84gpb2" path="res://line/super.gd" id="8_ea2m5"]
 [ext_resource type="Theme" uid="uid://cnuiw8kysq02q" path="res://themes/round_key.tres" id="9_52axe"]
+[ext_resource type="Script" uid="uid://c6vojisk6mwcj" path="res://trash)))/chipher_text.gd" id="11_1qx0e"]
+[ext_resource type="FontFile" uid="uid://rdkn3jthpp0a" path="res://fonts/FOTON_round.ttf" id="11_6rcm4"]
 [ext_resource type="Script" uid="uid://dm1o0h1rvswe8" path="res://keyboards/keyboard_2.gd" id="11_bk3ew"]
 [ext_resource type="Script" uid="uid://dnany4e34qdiw" path="res://keyboards/key_2.gd" id="12_6agfp"]
 [ext_resource type="Script" uid="uid://c77vlth8u1lbm" path="res://keyboards/keyboard.gd" id="12_6gnuv"]
@@ -321,9 +323,10 @@ max_polyphony = 5
 layout_mode = 2
 theme = ExtResource("3_nvks4")
 tab_alignment = 1
-current_tab = 0
+current_tab = 1
 
 [node name="&TEXTEDIT" type="TabBar" parent="MarginContainer/main_tabs"]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
@@ -422,7 +425,6 @@ expand_icon = true
 script = ExtResource("8_a3a06")
 
 [node name="&TEXTCHIPHER" type="TabBar" parent="MarginContainer/main_tabs"]
-visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 
@@ -435,15 +437,31 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="Label" type="Label" parent="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer"]
+[node name="chipher_text" type="Label" parent="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-text = "afasf"
+theme_override_fonts/font = ExtResource("11_6rcm4")
+script = ExtResource("11_1qx0e")
 
-[node name="LineEdit" type="LineEdit" parent="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer"]
 layout_mode = 2
+size_flags_vertical = 4
+alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
 theme = ExtResource("9_52axe")
 editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+virtual_keyboard_enabled = false
+
+[node name="chipher_mode" type="Button" parent="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("9_52axe")
+theme_override_font_sizes/font_size = 46
+text = "]"
 
 [node name="HSeparator" type="HSeparator" parent="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer"]
 custom_minimum_size = Vector2(50, 10)
@@ -697,6 +715,7 @@ vertical_alignment = 1
 [connection signal="button_down" from="MarginContainer/main_tabs/&TEXTEDIT/VBoxContainer/keyboard/key" to="MarginContainer/main_tabs/&TEXTEDIT/VBoxContainer/keyboard/key" method="_on_button_down"]
 [connection signal="button_up" from="MarginContainer/main_tabs/&TEXTEDIT/VBoxContainer/keyboard/key" to="MarginContainer/main_tabs/&TEXTEDIT/VBoxContainer/keyboard/key" method="_on_button_up"]
 [connection signal="pressed" from="MarginContainer/main_tabs/&TEXTEDIT/VBoxContainer/keyboard/key" to="MarginContainer/main_tabs/&TEXTEDIT/VBoxContainer/keyboard/key" method="_on_pressed"]
+[connection signal="pressed" from="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer/HBoxContainer/chipher_mode" to="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer/chipher_text" method="_on_chipher_mode_pressed"]
 [connection signal="button_down" from="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer/keyboard/key" to="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer/keyboard/key" method="_on_button_down"]
 [connection signal="button_up" from="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer/keyboard/key" to="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer/keyboard/key" method="_on_button_up"]
 [connection signal="pressed" from="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer/keyboard/key" to="MarginContainer/main_tabs/&TEXTCHIPHER/VBoxContainer/keyboard/key" method="_on_pressed"]

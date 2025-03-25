@@ -5,21 +5,21 @@ var round_st = load("res://themes/round_key.tres")
 func _ready() -> void:
 	text = name
 func _on_pressed() -> void:
-	var caret_col = int($"../../LineEdit".get_caret_column())
+	var caret_col = int($"../../HBoxContainer/LineEdit".get_caret_column())
 	var caret_mi = caret_col - 1
 	var caret_pl = caret_col + 1
 	if name != "+" and name != "-" and name != "=":
 		$"../../../../../Audio_click".play()
-		$"../../LineEdit".insert_text_at_caret(text)
+		$"../../HBoxContainer/LineEdit".insert_text_at_caret(text)
 	elif name == "=":
 		$"../../../../../Audio_click".play()
-		$"../../LineEdit".delete_char_at_caret()
+		$"../../HBoxContainer/LineEdit".delete_char_at_caret()
 	elif name == "+":
 		$"../../../../../Audio_click".play()
-		$"../../LineEdit".set_caret_column(caret_mi)
+		$"../../HBoxContainer/LineEdit".set_caret_column(caret_mi)
 	elif name == "-":
 		$"../../../../../Audio_click".play()
-		$"../../LineEdit".set_caret_column(caret_pl)
+		$"../../HBoxContainer/LineEdit".set_caret_column(caret_pl)
 func _on_button_down() -> void:
 	set_z_index(1)
 func _on_button_up() -> void:
