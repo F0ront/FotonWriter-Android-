@@ -22,19 +22,24 @@ func _on_pressed() -> void:
 		$"../../../../../menu/TabContainer".set_theme(round_st)
 		$"../../../../../menu/TabContainer/&SETTINGS/VBoxContainer/test_text".remove_theme_font_override("font")
 		$"../../../../../menu/TabContainer/&SETTINGS/VBoxContainer/test_text".add_theme_font_override("font", round_font)
-		$"../../../../&TEXTCHIPHER/VBoxContainer/LineEdit".set_theme(round_st)
+		$"../../../../&TEXTCHIPHER/VBoxContainer/HBoxContainer/LineEdit".set_theme(round_st)
+		$"../../../../&TEXTCHIPHER/VBoxContainer/ScrollContainer".set_theme(round_st)
+		$"../../../../&TEXTCHIPHER/VBoxContainer/HBoxContainer/chipher_mode".set_theme(round_st)
+		$"../../../../&TEXTCHIPHER/VBoxContainer/ScrollContainer/chipher_text".set_theme(round_st)
 	elif i == 1:
 		self.set_theme(sharp_st)
 		size.x = size.y
 		$"../../../..".set_theme(panel_sh)
 		$"../../TextEdit".set_theme(sharp_st)
-		$"../../../../&TEXTCHIPHER/VBoxContainer/LineEdit".set_theme(sharp_st)
 		$"../keyboard".set_theme(sharp_st)
 		$"../super".set_theme(sharp_st)
 		$"../../../../../menu/TabContainer".set_theme(sharp_st)
 		$"../../../../../menu/TabContainer/&SETTINGS/VBoxContainer/test_text".remove_theme_font_override("font")
 		$"../../../../../menu/TabContainer/&SETTINGS/VBoxContainer/test_text".add_theme_font_override("font", sharp_font)
-		$"../../../../&TEXTCHIPHER/VBoxContainer/LineEdit".set_theme(sharp_st)
+		$"../../../../&TEXTCHIPHER/VBoxContainer/HBoxContainer/LineEdit".set_theme(sharp_st)
+		$"../../../../&TEXTCHIPHER/VBoxContainer/ScrollContainer".set_theme(sharp_st)
+		$"../../../../&TEXTCHIPHER/VBoxContainer/HBoxContainer/chipher_mode".set_theme(sharp_st)
+		$"../../../../&TEXTCHIPHER/VBoxContainer/ScrollContainer/chipher_text".set_theme(sharp_st)
 func _on_button_down() -> void:
 	set_z_index(1)
 
