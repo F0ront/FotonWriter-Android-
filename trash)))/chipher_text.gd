@@ -1,15 +1,18 @@
 extends Label
+@onready var chipher_mode = $"../../HBoxContainer/chipher_mode"
+@onready var key_input = $"../../HBoxContainer/LineEdit"
+@onready var chipher_text = $"../../../../&TEXTEDIT/VBoxContainer/TextEdit"
 var mode = true # true = crypt, false = decrypt
 func _on_chipher_mode_pressed() -> void:
 	if mode == true:
 		mode = false
-		$"../../HBoxContainer/chipher_mode".text = "["
+		chipher_mode.text = "["
 	elif mode == false:
 		mode = true
-		$"../../HBoxContainer/chipher_mode".text = "]"
+		chipher_mode.text = "]"
 
-	var key = $"../../HBoxContainer/LineEdit".text
-	var text_to_chi = $"../../../../&TEXTEDIT/VBoxContainer/TextEdit".text
+	var key = key_input.text
+	var text_to_chi = chipher_text.text
 	var alphabet = "oauvrdientch fg0123456789"
 	var result = ""
 	var key_index = 0
