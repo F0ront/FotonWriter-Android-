@@ -8,3 +8,6 @@ func _on_itchio_pressed() -> void:
 
 func _on_youtube_pressed() -> void:
 	pass # Replace with function body.
+
+func _on_github_pressed() -> void:
+	OS.shell_open("https://github.com/F0ront")
